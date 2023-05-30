@@ -5,16 +5,23 @@ using UnityEngine.UI;
 
 public class PassaVal : MonoBehaviour
 {
-    public Text valorGtxt;
-    public Text valorDtxt;
-    public Text valorHtxt;
+    public Text glicemiaText;
+    public Text dataText;
+    public Text horaText;
+    public Text valorFloatText;
 
-
-    void Start()
+    private void Start()
     {
-        valorGtxt.text= NovaTela1.instance1;
-        valorDtxt.text= NovaTela1.instance2;
-        valorHtxt.text= NovaTela1.instance3;
-    }
+        string glicemia = PlayerPrefs.GetString("Glicemia");
+        string data = PlayerPrefs.GetString("Data");
+        string hora = PlayerPrefs.GetString("Hora");
 
+        float valorFloat;
+        float.TryParse(glicemia, out valorFloat);
+
+        glicemiaText.text = glicemia != null ? glicemia : "";
+        dataText.text = data != null ? data : "";
+        horaText.text = hora != null ? hora : "";
+        valorFloatText.text = valorFloat.ToString();
+    }
 }
