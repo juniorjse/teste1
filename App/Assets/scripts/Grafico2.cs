@@ -12,7 +12,7 @@ public class Grafico2 : MonoBehaviour
     {
         graficoConteiner = transform.Find("graficoConteiner").GetComponent<RectTransform>();
 
-        List<int> valorLista= new List<int>() {5, 3, 200, 40};
+        List<int> valorLista= new List<int>() {100, 200, 150,};
         MostraGrafico(valorLista);
     }
 
