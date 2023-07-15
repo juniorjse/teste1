@@ -7,7 +7,8 @@ public class Grafico20 : MonoBehaviour
 {
     [SerializeField] private Sprite CirculoSprite;
     private RectTransform graficoConteiner;
-
+    private RectTransform labelTemplateX;
+    private RectTransform labelTemplateY;
     private void Aweke()
     {
         graficoConteiner = transform.Find("graficoConteiner").GetComponent<RectTransform>();
