@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TELA1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/TELA2.unity
+    path: Assets/Scenes/TELA2(desativada).unity
     guid: 7bf10d499de91ee4797c48e3c922caa3
   - enabled: 1
     path: Assets/Scenes/GRAFICO.unity
